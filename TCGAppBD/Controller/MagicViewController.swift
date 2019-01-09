@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MagicViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
