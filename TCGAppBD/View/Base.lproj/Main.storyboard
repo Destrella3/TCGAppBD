@@ -34,7 +34,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="279" height="346"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="20w-9C-wzX">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="20w-9C-wzX">
                                                     <rect key="frame" x="8" y="28" width="263" height="310"/>
                                                 </imageView>
                                                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="EPf-ie-2EU">
@@ -42,7 +42,7 @@
                                                 </activityIndicatorView>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstItem="20w-9C-wzX" firstAttribute="top" secondItem="hbf-2t-Ajg" secondAttribute="topMargin" id="0L2-eh-lln"/>
                                             <constraint firstItem="20w-9C-wzX" firstAttribute="leading" secondItem="hbf-2t-Ajg" secondAttribute="leadingMargin" id="6oW-Fp-b88"/>
@@ -51,6 +51,9 @@
                                             <constraint firstItem="EPf-ie-2EU" firstAttribute="centerX" secondItem="hbf-2t-Ajg" secondAttribute="centerX" id="NRz-T4-VQG"/>
                                             <constraint firstItem="EPf-ie-2EU" firstAttribute="centerY" secondItem="hbf-2t-Ajg" secondAttribute="centerY" id="wYS-4q-dA4"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="magicImageView" destination="20w-9C-wzX" id="JPd-0u-3FJ"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -65,6 +68,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Magic" id="O07-lt-CjL"/>
+                    <connections>
+                        <outlet property="magicCollectionView" destination="C5i-Og-Bq2" id="2Hu-XK-WAM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

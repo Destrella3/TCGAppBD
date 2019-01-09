@@ -9,11 +9,11 @@
 import Foundation
 
 struct MagicCards: Codable {
-    let cards: [Card]
+    let cards: [MagicCard]
 }
 
-struct Card: Codable {
-    let imageUrl: String
+struct MagicCard: Codable {
+    let imageUrl: String?
     let foreignNames: [ForeignNames]
 }
 
@@ -21,4 +21,5 @@ struct ForeignNames: Codable {
     let name: String
     let text: String
     let language: String
+    let imageUrl: String
 }
