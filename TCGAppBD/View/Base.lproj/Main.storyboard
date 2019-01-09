@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Vw-ZI-g7a">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rHO-33-dsK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -69,7 +69,7 @@
         <scene sceneID="cy4-31-wmV">
             <objects>
                 <viewController id="zME-NG-Oc3" customClass="DetailMagicViewController" customModule="TCGAppBD" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sLK-Ec-dU3">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="sLK-Ec-dU3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -79,6 +79,7 @@
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7lf-zr-5Oc">
                                 <rect key="frame" x="37.5" y="110" width="300" height="467"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XsY-gV-SJu">
                                 <rect key="frame" x="82.5" y="110.5" width="210" height="280.5"/>
@@ -106,7 +107,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.74565296377115886" green="0.76341660710113435" blue="0.79559715417435928" alpha="0.15531357020547945" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="N00-Sn-otA" firstAttribute="leading" secondItem="kjE-TB-CDh" secondAttribute="leading" id="5Qy-Ta-1zt"/>
                             <constraint firstItem="7lf-zr-5Oc" firstAttribute="width" secondItem="sLK-Ec-dU3" secondAttribute="width" multiplier="0.8" id="8iy-4j-3rc"/>
@@ -229,6 +230,7 @@
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="77M-tM-Npb">
                                 <rect key="frame" x="37.5" y="110" width="300" height="467"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1iI-hg-Il9">
                                 <rect key="frame" x="67.5" y="122.5" width="240" height="280"/>
@@ -287,7 +289,7 @@
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.064094692468643188" green="0.047484986484050751" blue="0.19379857182502747" alpha="0.3046339897260274" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="1iI-hg-Il9" firstAttribute="width" secondItem="77M-tM-Npb" secondAttribute="width" multiplier="0.8" id="67I-UI-hyD"/>
                             <constraint firstItem="77M-tM-Npb" firstAttribute="centerY" secondItem="eX7-xl-gIq" secondAttribute="centerY" id="7Ch-sD-7PZ"/>
