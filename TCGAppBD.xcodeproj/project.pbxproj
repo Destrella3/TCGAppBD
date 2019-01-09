@@ -13,6 +13,8 @@
 		938942A021E6692C00D16A7D /* DetailMagicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9389429F21E6692C00D16A7D /* DetailMagicViewController.swift */; };
 		938942A221E6693A00D16A7D /* DetailPokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938942A121E6693A00D16A7D /* DetailPokemonViewController.swift */; };
 		938942A421E6698800D16A7D /* DetailPokemonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938942A321E6698800D16A7D /* DetailPokemonCollectionViewCell.swift */; };
+		938942A621E66E2900D16A7D /* MagicCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938942A521E66E2900D16A7D /* MagicCards.swift */; };
+		938942A821E6879100D16A7D /* DetailMagicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938942A721E6879100D16A7D /* DetailMagicCollectionViewCell.swift */; };
 		93ADF63921E65C7400092DCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ADF63821E65C7400092DCB /* AppDelegate.swift */; };
 		93ADF63B21E65C7400092DCB /* MagicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ADF63A21E65C7400092DCB /* MagicViewController.swift */; };
 		93ADF63E21E65C7400092DCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93ADF63C21E65C7400092DCB /* Main.storyboard */; };
@@ -30,6 +32,8 @@
 		9389429F21E6692C00D16A7D /* DetailMagicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMagicViewController.swift; sourceTree = "<group>"; };
 		938942A121E6693A00D16A7D /* DetailPokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPokemonViewController.swift; sourceTree = "<group>"; };
 		938942A321E6698800D16A7D /* DetailPokemonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPokemonCollectionViewCell.swift; sourceTree = "<group>"; };
+		938942A521E66E2900D16A7D /* MagicCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicCards.swift; sourceTree = "<group>"; };
+		938942A721E6879100D16A7D /* DetailMagicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMagicCollectionViewCell.swift; sourceTree = "<group>"; };
 		93ADF63521E65C7400092DCB /* TCGAppBD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCGAppBD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93ADF63821E65C7400092DCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93ADF63A21E65C7400092DCB /* MagicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +92,7 @@
 				93ADF63A21E65C7400092DCB /* MagicViewController.swift */,
 				9389429B21E668F300D16A7D /* MagicCollectionViewCell.swift */,
 				9389429F21E6692C00D16A7D /* DetailMagicViewController.swift */,
+				938942A721E6879100D16A7D /* DetailMagicCollectionViewCell.swift */,
 				9389429921E668A800D16A7D /* PokemonViewController.swift */,
 				9389429D21E6690200D16A7D /* PokemonCollectionViewCell.swift */,
 				938942A121E6693A00D16A7D /* DetailPokemonViewController.swift */,
@@ -117,6 +122,7 @@
 		93ADF64D21E65CA500092DCB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				938942A521E66E2900D16A7D /* MagicCards.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -202,7 +208,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				938942A821E6879100D16A7D /* DetailMagicCollectionViewCell.swift in Sources */,
 				9389429C21E668F300D16A7D /* MagicCollectionViewCell.swift in Sources */,
+				938942A621E66E2900D16A7D /* MagicCards.swift in Sources */,
 				93ADF65221E65D3000092DCB /* AppError.swift in Sources */,
 				9389429E21E6690200D16A7D /* PokemonCollectionViewCell.swift in Sources */,
 				938942A021E6692C00D16A7D /* DetailMagicViewController.swift in Sources */,
