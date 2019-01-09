@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9389429A21E668A800D16A7D /* PokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9389429921E668A800D16A7D /* PokemonViewController.swift */; };
 		9389429C21E668F300D16A7D /* MagicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9389429B21E668F300D16A7D /* MagicCollectionViewCell.swift */; };
 		9389429E21E6690200D16A7D /* PokemonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9389429D21E6690200D16A7D /* PokemonCollectionViewCell.swift */; };
 		938942A021E6692C00D16A7D /* DetailMagicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9389429F21E6692C00D16A7D /* DetailMagicViewController.swift */; };
@@ -18,6 +17,7 @@
 		938942AA21E68BC100D16A7D /* PokemonCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938942A921E68BC100D16A7D /* PokemonCards.swift */; };
 		938942AC21E68CEF00D16A7D /* MagicAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938942AB21E68CEF00D16A7D /* MagicAPIClient.swift */; };
 		938942AE21E690B500D16A7D /* PokemonAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938942AD21E690B500D16A7D /* PokemonAPIClient.swift */; };
+		938942B021E6A73100D16A7D /* PokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938942AF21E6A73100D16A7D /* PokemonViewController.swift */; };
 		93ADF63921E65C7400092DCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ADF63821E65C7400092DCB /* AppDelegate.swift */; };
 		93ADF63B21E65C7400092DCB /* MagicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ADF63A21E65C7400092DCB /* MagicViewController.swift */; };
 		93ADF63E21E65C7400092DCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93ADF63C21E65C7400092DCB /* Main.storyboard */; };
@@ -29,7 +29,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9389429921E668A800D16A7D /* PokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewController.swift; sourceTree = "<group>"; };
 		9389429B21E668F300D16A7D /* MagicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicCollectionViewCell.swift; sourceTree = "<group>"; };
 		9389429D21E6690200D16A7D /* PokemonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCollectionViewCell.swift; sourceTree = "<group>"; };
 		9389429F21E6692C00D16A7D /* DetailMagicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMagicViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +39,7 @@
 		938942A921E68BC100D16A7D /* PokemonCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCards.swift; sourceTree = "<group>"; };
 		938942AB21E68CEF00D16A7D /* MagicAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicAPIClient.swift; sourceTree = "<group>"; };
 		938942AD21E690B500D16A7D /* PokemonAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonAPIClient.swift; sourceTree = "<group>"; };
+		938942AF21E6A73100D16A7D /* PokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewController.swift; sourceTree = "<group>"; };
 		93ADF63521E65C7400092DCB /* TCGAppBD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCGAppBD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93ADF63821E65C7400092DCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93ADF63A21E65C7400092DCB /* MagicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicViewController.swift; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 				9389429B21E668F300D16A7D /* MagicCollectionViewCell.swift */,
 				9389429F21E6692C00D16A7D /* DetailMagicViewController.swift */,
 				938942A721E6879100D16A7D /* DetailMagicCollectionViewCell.swift */,
-				9389429921E668A800D16A7D /* PokemonViewController.swift */,
+				938942AF21E6A73100D16A7D /* PokemonViewController.swift */,
 				9389429D21E6690200D16A7D /* PokemonCollectionViewCell.swift */,
 				938942A121E6693A00D16A7D /* DetailPokemonViewController.swift */,
 				938942A321E6698800D16A7D /* DetailPokemonCollectionViewCell.swift */,
@@ -227,11 +227,11 @@
 				938942A021E6692C00D16A7D /* DetailMagicViewController.swift in Sources */,
 				938942A421E6698800D16A7D /* DetailPokemonCollectionViewCell.swift in Sources */,
 				93ADF63B21E65C7400092DCB /* MagicViewController.swift in Sources */,
-				9389429A21E668A800D16A7D /* PokemonViewController.swift in Sources */,
 				93ADF65421E65D4200092DCB /* NetworkHelper.swift in Sources */,
 				938942A221E6693A00D16A7D /* DetailPokemonViewController.swift in Sources */,
 				93ADF63921E65C7400092DCB /* AppDelegate.swift in Sources */,
 				93ADF65021E65CC500092DCB /* ImageHelper.swift in Sources */,
+				938942B021E6A73100D16A7D /* PokemonViewController.swift in Sources */,
 				938942AA21E68BC100D16A7D /* PokemonCards.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
