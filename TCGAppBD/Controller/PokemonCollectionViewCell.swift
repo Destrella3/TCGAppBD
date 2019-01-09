@@ -9,5 +9,6 @@
 import UIKit
 
 class PokemonCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var pokemonImage: UIImageView!
     
 }

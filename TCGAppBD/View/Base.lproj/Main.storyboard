@@ -226,6 +226,9 @@
                                             <constraint firstAttribute="bottomMargin" secondItem="WId-c7-LBn" secondAttribute="bottom" id="dGm-fh-Xjt"/>
                                             <constraint firstItem="WId-c7-LBn" firstAttribute="leading" secondItem="REm-n7-D4i" secondAttribute="leadingMargin" id="gNN-DK-SJn"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="pokemonImage" destination="WId-c7-LBn" id="4Ml-m1-ItW"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -240,6 +243,9 @@
                         <viewLayoutGuide key="safeArea" id="88c-bV-g0X"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pokemon" id="gS4-Jp-hSa"/>
+                    <connections>
+                        <outlet property="pokeCollectionView" destination="ygC-45-Psr" id="xc5-ph-Jsm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aUk-sx-nlQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

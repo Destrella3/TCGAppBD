@@ -12,8 +12,8 @@ struct PokemonCards : Codable {
     let cards : [PokeCard]
 }
 struct PokeCard: Codable {
-    let imageUrl: String
-    let imageUrlHiRes: String
+    let imageUrl: String?
+    let imageUrlHiRes: String?
     let attacks: [Attack]
 }
 struct Attack: Codable {
