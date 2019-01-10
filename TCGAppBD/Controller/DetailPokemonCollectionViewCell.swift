@@ -9,5 +9,8 @@
 import UIKit
 
 class DetailPokemonCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var firstLabel: UILabel!
+    @IBOutlet weak var secondLabel: UILabel!
+    @IBOutlet weak var textView: UITextView!
     
 }

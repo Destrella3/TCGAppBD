@@ -273,7 +273,7 @@
         <!--Detail Pokemon View Controller-->
         <scene sceneID="bl5-TM-A9Y">
             <objects>
-                <viewController id="fDg-FW-rid" customClass="DetailPokemonViewController" customModule="TCGAppBD" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PokemonDVC" id="fDg-FW-rid" customClass="DetailPokemonViewController" customModule="TCGAppBD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="kz7-vN-9pq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -281,6 +281,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyv-xh-5cA">
                                 <rect key="frame" x="0.0" y="10" width="375" height="667"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="dismissButton:" destination="fDg-FW-rid" eventType="touchUpInside" id="9xG-QU-Ma4"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qD6-8U-hq6">
                                 <rect key="frame" x="37.5" y="110" width="300" height="467"/>
@@ -291,34 +294,34 @@
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Kep-va-1n0">
                                         <rect key="frame" x="30" y="300" width="240" height="167"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sHa-cV-oKd">
-                                            <size key="itemSize" width="237" height="154"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hdr-Py-C0E">
+                                            <size key="itemSize" width="251" height="146"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DetailPokemonCell" id="gsL-Oy-vio" customClass="DetailPokemonCollectionViewCell" customModule="TCGAppBD" customModuleProvider="target">
-                                                <rect key="frame" x="1.5" y="0.0" width="237" height="154"/>
+                                                <rect key="frame" x="0.0" y="10.5" width="251" height="146"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="237" height="154"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="251" height="146"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcy-5C-LPS">
-                                                            <rect key="frame" x="19" y="28" width="199" height="21"/>
+                                                            <rect key="frame" x="19" y="28" width="213" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Afy-gV-vJI">
-                                                            <rect key="frame" x="19" y="54" width="199" height="21"/>
+                                                            <rect key="frame" x="19" y="54" width="213" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1Q6-KR-Jok">
-                                                            <rect key="frame" x="0.0" y="80" width="237" height="74"/>
+                                                            <rect key="frame" x="0.0" y="80" width="251" height="66"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -338,6 +341,11 @@
                                                     <constraint firstItem="Afy-gV-vJI" firstAttribute="top" secondItem="mcy-5C-LPS" secondAttribute="bottom" constant="5" id="xBd-w0-RNc"/>
                                                     <constraint firstItem="Afy-gV-vJI" firstAttribute="leading" secondItem="gsL-Oy-vio" secondAttribute="leadingMargin" constant="11" id="zW4-3o-oaG"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outlet property="firstLabel" destination="mcy-5C-LPS" id="Qfa-vn-C2P"/>
+                                                    <outlet property="secondLabel" destination="Afy-gV-vJI" id="l6u-th-yEV"/>
+                                                    <outlet property="textView" destination="1Q6-KR-Jok" id="HeV-hg-SU2"/>
+                                                </connections>
                                             </collectionViewCell>
                                         </cells>
                                     </collectionView>
@@ -373,10 +381,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Rwi-Ro-1eb"/>
                     </view>
+                    <connections>
+                        <outlet property="pokeCollectionView" destination="Kep-va-1n0" id="rms-M2-XFr"/>
+                        <outlet property="pokemonImage" destination="It0-ht-6pL" id="NGV-da-wgw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WUv-DY-zch" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1929" y="847"/>
+            <point key="canvasLocation" x="1928.8" y="846.9265367316342"/>
         </scene>
     </scenes>
 </document>

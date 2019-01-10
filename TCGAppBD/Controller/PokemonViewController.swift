@@ -60,4 +60,11 @@ extension PokemonViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize.init(width: 125, height: 175)
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        guard let vc = storyboard.instantiateViewController(withIdentifier: "PokemonDVC") as? DetailPokemonViewController else { return }
+        vc.modalPresentationStyle = .overCurrentContext
+        vc.pokecard = pokemonCards[indexPath.row]
+        present(vc, animated: true, completion: nil)
+    }
 }
