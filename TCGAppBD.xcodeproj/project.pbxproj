@@ -40,6 +40,7 @@
 		938942AB21E68CEF00D16A7D /* MagicAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicAPIClient.swift; sourceTree = "<group>"; };
 		938942AD21E690B500D16A7D /* PokemonAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonAPIClient.swift; sourceTree = "<group>"; };
 		938942AF21E6A73100D16A7D /* PokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewController.swift; sourceTree = "<group>"; };
+		938942B121E7DF7300D16A7D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		93ADF63521E65C7400092DCB /* TCGAppBD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCGAppBD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93ADF63821E65C7400092DCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93ADF63A21E65C7400092DCB /* MagicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +89,7 @@
 				93ADF64D21E65CA500092DCB /* Model */,
 				93ADF64E21E65CB400092DCB /* Network Services */,
 				93ADF64421E65C7500092DCB /* Info.plist */,
+				938942B121E7DF7300D16A7D /* README.md */,
 			);
 			path = TCGAppBD;
 			sourceTree = "<group>";
