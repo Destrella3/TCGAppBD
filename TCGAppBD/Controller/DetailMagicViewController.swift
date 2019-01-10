@@ -9,22 +9,46 @@
 import UIKit
 
 class DetailMagicViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    
+    @IBOutlet weak var detailCollectionView: UICollectionView!
+    
+    public var magicCards: MagicCard!
+    
+    @IBAction func dismissButton(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        detailCollectionView.dataSource = self
     }
-    */
-
+    
+    
+    
 }
+
+extension DetailMagicViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return magicCards.foreignNames.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DetailMagicCell", for: indexPath) as? DetailMagicCollectionViewCell else { return UICollectionViewCell() }
+        let magicToSet = magicCards.foreignNames[indexPath.row]
+        ImageHelper.shared.fetchImage(urlString: magicToSet.imageUrl) { (appError, image) in
+            if let appError = appError {
+                print(appError.errorMessage())
+            } else if let image = image {
+                cell.magicImage.image = image
+            }
+        }
+        cell.language.text = magicToSet.language
+        cell.magicText.text = magicToSet.text
+        cell.cardName.text = magicToSet.name
+        return cell
+        
+    }
+}
+
+
+

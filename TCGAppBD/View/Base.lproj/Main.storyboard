@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Vw-ZI-g7a">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Vw-ZI-g7a">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -52,7 +52,7 @@
                                             <constraint firstItem="EPf-ie-2EU" firstAttribute="centerY" secondItem="hbf-2t-Ajg" secondAttribute="centerY" id="wYS-4q-dA4"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="magicImageView" destination="20w-9C-wzX" id="JPd-0u-3FJ"/>
+                                            <outlet property="magicImageView" destination="20w-9C-wzX" id="bSW-2S-hPv"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -79,7 +79,7 @@
         <!--Detail Magic View Controller-->
         <scene sceneID="IQH-Xk-A9b">
             <objects>
-                <viewController id="G70-Kx-ud2" customClass="DetailMagicViewController" customModule="TCGAppBD" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detailMagicViewController" id="G70-Kx-ud2" customClass="DetailMagicViewController" customModule="TCGAppBD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="rCe-Ag-xgl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,6 +87,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uX-pc-kHO">
                                 <rect key="frame" x="0.0" y="10" width="375" height="667"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="dismissButton:" destination="G70-Kx-ud2" eventType="touchUpInside" id="q9h-fC-oeJ"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oyY-wt-T85">
                                 <rect key="frame" x="37.5" y="110" width="300" height="467"/>
@@ -94,7 +97,7 @@
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9pe-Ti-swg">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="467"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BYZ-6x-kgc">
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BYZ-6x-kgc">
                                             <size key="itemSize" width="298" height="464"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -102,7 +105,7 @@
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DetailMagicCell" id="Jyi-X1-YLT" customClass="DetailMagicCollectionViewCell" customModule="TCGAppBD" customModuleProvider="target">
-                                                <rect key="frame" x="1" y="0.0" width="298" height="464"/>
+                                                <rect key="frame" x="0.0" y="1.5" width="298" height="464"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                                     <rect key="frame" x="0.0" y="0.0" width="298" height="464"/>
@@ -131,7 +134,7 @@
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                         </textView>
                                                         <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="933-k6-iJH">
-                                                            <rect key="frame" x="139" y="152" width="20" height="20"/>
+                                                            <rect key="frame" x="139" y="152.5" width="20" height="20"/>
                                                         </activityIndicatorView>
                                                     </subviews>
                                                 </view>
@@ -153,6 +156,12 @@
                                                     <constraint firstItem="rio-Je-PaP" firstAttribute="height" secondItem="Jyi-X1-YLT" secondAttribute="height" multiplier="0.7" id="mU3-AQ-fCD"/>
                                                     <constraint firstItem="JnP-ia-Hql" firstAttribute="top" secondItem="f6p-9y-O6j" secondAttribute="bottom" constant="5" id="ywH-UP-mie"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outlet property="cardName" destination="f6p-9y-O6j" id="jCm-RB-5LX"/>
+                                                    <outlet property="language" destination="JnP-ia-Hql" id="Gdn-UX-UYs"/>
+                                                    <outlet property="magicImage" destination="rio-Je-PaP" id="U5J-gF-V4i"/>
+                                                    <outlet property="magicText" destination="BGy-ie-DDR" id="5Ew-VS-fyB"/>
+                                                </connections>
                                             </collectionViewCell>
                                         </cells>
                                     </collectionView>
@@ -179,6 +188,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lEO-dy-4fZ"/>
                     </view>
+                    <connections>
+                        <outlet property="detailCollectionView" destination="9pe-Ti-swg" id="duq-nO-YNV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bhD-b0-RiJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -213,7 +225,7 @@
                                                     <rect key="frame" x="8" y="28" width="312" height="321"/>
                                                 </imageView>
                                                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="AsM-hP-HhB">
-                                                    <rect key="frame" x="154" y="168" width="20" height="20"/>
+                                                    <rect key="frame" x="154" y="168.5" width="20" height="20"/>
                                                 </activityIndicatorView>
                                             </subviews>
                                         </view>

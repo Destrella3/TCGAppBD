@@ -10,6 +10,11 @@ import UIKit
 
 class MagicCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var magicImageView: UIImageView!
+
+        @IBOutlet weak var magicImageView: UIImageView!
     
+        override func prepareForReuse() {
+            magicImageView.image = nil
+        }
 }
+

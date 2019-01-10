@@ -36,7 +36,7 @@ class MagicViewController: UIViewController {
                 self.magicCard = magicCard
             }
             if let cards = magicCard {
-                self.magicCard = cards.filter{$0.imageUrl != nil && $0.imageUrl != nil}
+                self.magicCard = cards.filter{$0.imageUrl != nil}
             }
         }
     }
@@ -66,8 +66,12 @@ extension MagicViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize.init(width: 125, height: 175)
     }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = magicCollectionView.cellForItem(at: indexPath) as! MagicCollectionViewCell
-        let magic = magicCard[indexPath.row]
+        let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
+        guard let vc = storyBoard.instantiateViewController(withIdentifier: "detailMagicViewController") as? DetailMagicViewController else { return }
+        vc.modalPresentationStyle = .overCurrentContext
+        vc.magicCards = magicCard[indexPath.row]
+        present(vc, animated: true, completion: nil)
     }
 }

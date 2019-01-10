@@ -10,4 +10,9 @@ import UIKit
 
 class DetailMagicCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var magicImage: UIImageView!
+    @IBOutlet weak var language: UILabel!
+    @IBOutlet weak var magicText: UITextView!
+    @IBOutlet weak var cardName: UILabel!
+    
 }
